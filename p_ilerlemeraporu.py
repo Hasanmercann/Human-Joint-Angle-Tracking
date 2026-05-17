@@ -21,7 +21,7 @@ class ProgressReport(QMainWindow):  # Pencere ismini değiştirdik
         # Arka plan resmi için QLabel
         self.background_label = QLabel(self)
         self.background_label.setScaledContents(True)
-        self.set_background_image("resimler\\rapor.jpg")
+        self.set_background_image("resimler\\reports\\rapor.jpg")
 
         # Ana düzeni ayarla
         self.main_layout = QHBoxLayout(self.central_widget)

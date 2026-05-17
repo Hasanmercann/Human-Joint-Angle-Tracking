@@ -23,7 +23,7 @@ class Ui_Profile(object):
         self.labelphoto = QtWidgets.QLabel(Profile)
         self.labelphoto.setGeometry(QtCore.QRect(-10, 0, 1471, 951))
         self.labelphoto.setText("")
-        self.labelphoto.setPixmap(QtGui.QPixmap("resimler\\profile.jpeg"))
+        self.labelphoto.setPixmap(QtGui.QPixmap("resimler\\profile\\profile.jpeg"))
         self.labelphoto.setScaledContents(True)
         self.labelphoto.setObjectName("labelphoto")
         self.label1 = QtWidgets.QLabel(Profile)

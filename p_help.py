@@ -20,7 +20,7 @@ class Ui_Help(object):
         self.label_photo = QtWidgets.QLabel(Help)
         self.label_photo.setGeometry(QtCore.QRect(-40, 0, 1471, 951))
         self.label_photo.setText("")
-        self.label_photo.setPixmap(QtGui.QPixmap("resimler\\help.jpeg"))
+        self.label_photo.setPixmap(QtGui.QPixmap("resimler\\help\\help.jpeg"))
         self.label_photo.setScaledContents(True)
         self.label_photo.setAlignment(QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
         self.label_photo.setObjectName("label_photo")

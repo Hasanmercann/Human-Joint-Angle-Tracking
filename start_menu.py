@@ -76,7 +76,7 @@ class Ui_main_menu(object):
 
         self.label_photo = QtWidgets.QLabel(main_menu)
         self.label_photo.setGeometry(QtCore.QRect(-40, 0, 1471, 951))
-        self.label_photo.setPixmap(QtGui.QPixmap("resimler\\startmenu.jpg"))
+        self.label_photo.setPixmap(QtGui.QPixmap("resimler\\start_menu\\startmenu.jpg"))
         self.label_photo.setScaledContents(True)
 
         self.b_exercise_program = QtWidgets.QPushButton(main_menu)

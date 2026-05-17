@@ -15,7 +15,7 @@ class LoginWindow(QtWidgets.QWidget):
 
         # Arka Plan
         self.background_label = QtWidgets.QLabel(self)
-        self.background_pixmap = QtGui.QPixmap(os.path.expanduser("resimler\\login.jpeg"))
+        self.background_pixmap = QtGui.QPixmap(os.path.expanduser("resimler\\auth\\login.jpeg"))
         self.background_label.setPixmap(self.background_pixmap)
         self.background_label.setScaledContents(True)  # Resmi ölçeklendir
         self.background_label.setGeometry(0, 0, self.width(), self.height())  # Tam ekran boyutları
