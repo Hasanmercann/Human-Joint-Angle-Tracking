@@ -1,35 +1,35 @@
 ﻿# Real-Time Human Joint Angle Tracking and Control
 
-Bu proje, insan eklem açılarını gerçek zamanlı olarak takip eden ve referans egzersiz hareketleri ile karşılaştıran bir PyQt5 masaüstü uygulamasıdır.
+Bu proje, insan eklem açılarını gerçek zamanlı olarak izleyen ve referans egzersiz hareketleriyle karşılaştıran bir PyQt5 masaüstü uygulamasıdır.
 
-Bu README bilerek adım adım ilerleyecek şekilde yazıldı.
-- `##` başlıkları: Ana konular (amaç, kurulum, kullanım, teknik bilgiler)
-- `###` başlıkları: Ana konunun alt adımları
-- Kısa açıklama + görsel yaklaşımı: Hızlı okunabilirlik ve hızlı tekrar için
+Bu doküman, proje hakkında hızlı ve net bilgi verecek şekilde yapılandırılmıştır.
+- `##` başlıkları, ana bölümleri temsil eder.
+- `###` başlıkları, ilgili bölümün alt adımlarını açıklar.
+- Metin ve görseller birlikte kullanılarak hem teknik hem görsel bir anlatım sunulur.
 
-## Projenin Amacı
+## 1. Projenin Amacı
 - Kamera akışı üzerinden insan pozu algılanır (MediaPipe Pose).
 - Omuz, dirsek, kalça, diz ve ayak bileği dahil çoklu eklem açıları hesaplanır.
 - Referans hareket görselleri ile canlı hareket, tolerans aralığında karşılaştırılır.
 - Kullanıcıya egzersiz, profil, yardım ve ilerleme raporu ekranları sunulur.
 
-## Teknoloji Secimi ve Gerekcesi
+## 2. Teknoloji Yığını ve Gerekçesi
 - Python 3
 - PyQt5
 - OpenCV
 - MediaPipe
 - NumPy
 
-Bu teknolojiler secilirken amac, masaustu uygulamada hizli prototipleme ve gercek zamanli goruntu isleme performansi almaktir.
+Bu teknoloji seti, masaüstü arayüz geliştirme hızını ve gerçek zamanlı görüntü işleme performansını birlikte sağlamak amacıyla seçilmiştir.
 
-## Uygulama Akisi (Adim Adim)
+## 3. Uygulama Akışı
 1. Giriş ekranı açılır.
 2. Ana menüden ilgili modül seçilir.
 3. Egzersiz ekranında referans pozlar sırayla gösterilir.
 4. Kamera akışı üzerinden açı karşılaştırması yapılır.
 5. Sonuçlar ilerleme raporuna yansıtılır.
 
-## Gelistirme Sureci (Ne, Neden Yapildi)
+## 4. Geliştirme Süreci
 
 ### Adım 1: Proje sürümünün belirlenmesi
 - Workspace içindeki kopyalar arasından aktif ve en güncel sürüm seçildi.
@@ -51,31 +51,31 @@ Bu teknolojiler secilirken amac, masaustu uygulamada hizli prototipleme ve gerce
 - Kurulum, çalıştırma, teknik detaylar ve sorun giderme alanları genişletildi.
 - Bu sürümde kullanıcıya ait daha fazla görüntü, küçük görseller halinde eklendi.
 
-## Kurulum Rehberi
+## 5. Kurulum Rehberi
 
-### 1) Python kurulumu
+### 5.1 Python kurulumu
 ```bash
 python --version
 ```
 Python 3.7 veya üzeri önerilir.
 
-### 2) Depoyu çekme
+### 5.2 Depoyu çekme
 ```bash
 git clone https://github.com/Hasanmercann/Human-Joint-Angle-Tracking.git
 cd Human-Joint-Angle-Tracking
 ```
 
-### 3) Bağımlılıkları kurma
+### 5.3 Bağımlılıkları kurma
 ```bash
 pip install pyqt5 opencv-python mediapipe numpy
 ```
 
-### 4) Kurulumu doğrulama
+### 5.4 Kurulumu doğrulama
 ```bash
 python -c "import cv2, mediapipe, PyQt5, numpy; print('Kurulum tamam')"
 ```
 
-## Uygulamayi Baslatma
+## 6. Uygulamayı Başlatma
 
 ### Giriş ekranı ile başlatma
 ```bash
@@ -92,18 +92,18 @@ python start_menu.py
 python main.py
 ```
 
-## Demo Giriş Bilgisi
+## 7. Demo Giriş Bilgisi
 - Kullanıcı adı: hasan
 - Şifre: 12345
 
-Bu hesap test amaclidir ve uygulamanin ilk acilisini hizlandirmak icin README'de acik verilmistir.
+Bu hesap yalnızca test amaçlıdır ve uygulamanın ilk kurulum/doğrulama adımlarını hızlandırmak için paylaşılmıştır.
 
-## Ekran Goruntuleri ve Aciklamalar
+## 8. Ekran Görüntüleri
 
-Bu bolumde, hem uygulama ekranlari hem de gelistirme surecinde olusan gercek ekran goruntuleri birlikte verildi.
+Bu bölümde uygulama arayüzleri ve geliştirme sürecinde alınan gerçek ekran görüntüleri bir arada sunulmaktadır.
 
 ### Temel Uygulama Ekranları
-Giris, menu, yardim ve rapor ekranlarinin genel gorunumu:
+Giriş, ana menü, yardım ve rapor ekranlarının genel görünümü:
 <p>
   <img src="Görüntüler/giris/1.8%20log%20in%20ekranı.PNG" width="240" alt="Giriş ekranı" />
   <img src="Görüntüler/start_menu/1.1%20start%20menu.PNG" width="240" alt="Ana menü" />
@@ -112,7 +112,7 @@ Giris, menu, yardim ve rapor ekranlarinin genel gorunumu:
 </p>
 
 ### Egzersiz Görselleri (Kullanıcı Talebine Göre)
-Egzersiz modulu icindeki hareket secimi ve takip ekranlari:
+Egzersiz modülündeki hareket seçimi ve takip ekranları:
 <p>
   <img src="Görüntüler/egzersiz/1.3%20hareket%20et.PNG" width="220" alt="Egzersiz 1.3 hareket et" />
   <img src="Görüntüler/egzersiz/1.4%20egzersiz%20programı.PNG" width="220" alt="Egzersiz ekranı 1.4" />
@@ -120,7 +120,7 @@ Egzersiz modulu icindeki hareket secimi ve takip ekranlari:
 </p>
 
 ### Video Kareleri (Isaretlemeli Gorseller)
-Kullanici uzerindeki isaretlemelerin gorundugu kareler (pose takibi dogrulama ornekleri):
+Kullanıcı üzerindeki işaretlemelerin görüldüğü kareler (pose takibi doğrulama örnekleri):
 <p>
   <img src="Görüntüler/video_kareleri/vlcsnap-2025-01-20-20h27m50s040.png" width="220" alt="Video karesi 20h27m50s040" />
   <img src="Görüntüler/video_kareleri/vlcsnap-2025-01-20-20h27m58s456.png" width="220" alt="Video karesi 20h27m58s456" />
@@ -131,7 +131,7 @@ Kullanici uzerindeki isaretlemelerin gorundugu kareler (pose takibi dogrulama or
 </p>
 
 ### Python Klasörü (Tamamı)
-Python kurulum/surum kontrolu ve ortama dair ekran goruntuleri:
+Python kurulumu, sürüm kontrolü ve ortam doğrulamasına ait ekran görüntüleri:
 <p>
   <img src="Görüntüler/python/PPpython%20tanıma1.PNG" width="220" alt="Python tanıma 1" />
   <img src="Görüntüler/python/PPython%204.PNG" width="220" alt="Python 4" />
@@ -139,7 +139,7 @@ Python kurulum/surum kontrolu ve ortama dair ekran goruntuleri:
 </p>
 
 ### Kurulum Klasörü (Tamamı)
-Kurulum asamalari ve arac ekranlarina ait ornekler:
+Kurulum adımları ve araç ekranlarına ait örnekler:
 <p>
   <img src="Görüntüler/kurulum/kinectk%20kurulum2.PNG" width="220" alt="Kurulum 2" />
   <img src="Görüntüler/kurulum/studio%205.PNG" width="220" alt="Studio 5" />
@@ -147,7 +147,7 @@ Kurulum asamalari ve arac ekranlarina ait ornekler:
 </p>
 
 ### Diğer Klasörü (Tamamı)
-Proje surecinden kalan destekleyici ek goruntuler:
+Proje sürecinden kalan destekleyici ek görüntüler:
 <p>
   <img src="Görüntüler/diger/1111.PNG" width="180" alt="Diger 1111" />
   <img src="Görüntüler/diger/22222222.PNG" width="180" alt="Diger 22222222" />
@@ -157,13 +157,13 @@ Proje surecinden kalan destekleyici ek goruntuler:
   <img src="Görüntüler/diger/görüntü3.PNG" width="180" alt="Diger görüntü 3" />
 </p>
 
-## Teknik Parametreler
+## 9. Teknik Parametreler
 - Referans hareket klasörü: `hareketler/`
 - Açı toleransı: 40 derece
 - Pose confidence: 0.7
-- Isletim sistemi testi: Windows
+- İşletim sistemi testi: Windows
 
-## Sorun Giderme
+## 10. Sorun Giderme
 
 ### pyqt5 modülü bulunamadı
 ```bash
@@ -177,7 +177,7 @@ pip install --upgrade pyqt5
 ### Görseller görünmüyor
 - `Görüntüler/` ve `resimler/` klasör yapısının bozulmadığını doğrula.
 
-## Klasor Yapisi (Ozet)
+## 11. Klasör Yapısı (Özet)
 ```text
 Human-Joint-Angle-Tracking/
   start_menu.py
@@ -192,5 +192,5 @@ Human-Joint-Angle-Tracking/
   Görüntüler/
 ```
 
-## Son Not
-- Bu README sürümü, özellikle kullanıcı içeren ve işaretlemeli ekran görüntülerini daha yoğun gösterecek şekilde hazırlanmıştır.
+## 12. Son Not
+- Bu README sürümü, kullanıcı içeren ve işaretlemeli ekran görüntülerine daha fazla yer verecek şekilde profesyonel bir anlatımla güncellenmiştir.
