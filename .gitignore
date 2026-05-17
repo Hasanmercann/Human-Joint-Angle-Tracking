@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual/editor artifacts
+.vs/
+.vscode/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Archived/macOS metadata folders
+__MACOSX/
+
+# Runtime/local data
+login_state.txt
+kullanici_bilgileri.txt
+credentials.json

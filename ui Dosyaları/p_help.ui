@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help</class>
+ <widget class="QWidget" name="Help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Help</string>
+  </property>
+  <widget class="QLabel" name="label_photo">
+   <property name="geometry">
+    <rect>
+     <x>-350</x>
+     <y>-20</y>
+     <width>2291</width>
+     <height>981</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>help_photo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: rgb(255, 255, 255); /* Beyaz yazı rengi */
+    background-color: rgb(85, 170, 255); /* Hover sırasında mavi arka plan */
+    border: 0px solid; /* Sınır yok */
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>Uygulamanın Amacı  : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label1">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>60</y>
+     <width>331</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>19</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: black; /* Siyah yazı rengi */
+    background-color: rgba(0, 0, 0, 0); /* Şeffaf arka plan  */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Sıkça Sorulan Sorular </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>331</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>19</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: black; /* Siyah yazı rengi */
+    background-color: rgba(0, 0, 0, 0); /* Şeffaf arka plan  */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Uygulama Hakkında</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_back">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>100</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgb(0, 0, 0); /* Siyah arka plan */
+    color: rgb(255, 255, 255); /* Beyaz yazı rengi */ 
+}</string>
+   </property>
+   <property name="text">
+    <string>Geri Dön</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>420</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: rgb(255, 255, 255); /* Beyaz yazı rengi */
+    background-color: rgb(85, 170, 255); /* Hover sırasında mavi arka plan */
+    border: 0px solid; /* Sınır yok */
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>Nasıl kullanılır : </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_6">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>470</y>
+     <width>421</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: rgb(255, 255, 255); /* Beyaz yazı rengi */
+    background-color: rgb(50, 120, 210); /* Hover sırasında mavi arka plan */
+    border: 0px solid;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>3. Bir egzersiz sırasında karşılaştığım sorunları nasıl çözebilirim?</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_7">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>660</y>
+     <width>421</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: rgb(255, 255, 255); /* Beyaz yazı rengi */
+    background-color: rgb(50, 120, 210); /* Hover sırasında mavi arka plan */
+    border: 0px solid;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>4. X uygulamasını hangi cihazlarla kullanabilirim?</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_5">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>290</y>
+     <width>421</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: rgb(255, 255, 255); /* Beyaz yazı rengi */
+    background-color: rgb(50, 120, 210); /* Hover sırasında mavi arka plan */
+    border:0px solid;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>2. Egzersiz ilerlememi nasıl takip edebilirim?</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_4">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>90</y>
+     <width>421</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: rgb(255, 255, 255); /* Beyaz yazı rengi */
+    background-color: rgb(50, 120, 210); /* Hover sırasında mavi arka plan */
+    border: 0px solid;  
+}
+</string>
+   </property>
+   <property name="text">
+    <string>1. Uygulama nasıl çalışır ? </string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: rgb(255, 255, 255); /* Beyaz yazı rengi */
+    background-color: rgb(85, 170, 255); /* Hover sırasında mavi arka plan */
+    border: 0px solid; /* Sınır yok */
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>Kullanıcıya Faydası : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>750</y>
+     <width>281</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: black; /* Siyah yazı rengi */
+    background-color: rgba(0, 0, 0, 0); /* Şeffaf arka plan  */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Bizimle iletişime geçin</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label4">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>780</y>
+     <width>321</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: rgb(255, 255, 255); /* Beyaz yazı rengi */
+    background-color: rgb(85, 170, 255); /* Koyu gri arka plan */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>https://www.xxx.com/</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>421</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: black; /* Siyah yazı rengi */
+    background-color: rgba(0, 0, 0, 0); 
+}
+</string>
+   </property>
+   <property name="text">
+    <string>X uygulaması, ortopedik, nörolojik ve travmatik rahatsızlıkları olan hastaların fiziksel rehabilitasyon sürecini desteklemek için tasarlanmış etkileşimli bir giyilebilir teknoloji ürünüdür.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>421</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: black; /* Siyah yazı rengi */
+    background-color: rgba(0, 0, 0, 0); 
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Bu uygulama, sakatlanma riskini azaltmaya yardımcı olur, omurga, spor yaralanmaları, denge, omuz travmaları gibi rahatsızlıklarda kişiye özel egzersiz planları ve somut veriler sunarak iyileşme sürecini hızlandırır.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>480</y>
+     <width>421</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: black; /* Siyah yazı rengi */
+    background-color: rgba(0, 0, 0, 0); 
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Uzman gözetiminde, bantlar ve sensörler vücudun ilgili bölgelerine yerleştirildikten sonra uygulama üzerinden kalibrasyon yapılır. Görsel ve işitsel biofeedback teknolojisi sayesinde kullanıcı geri bildirim alır. Ayrıca, egzersizler oyunlaştırılmış şekilde sunularak motivasyon artırılır.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_4">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>150</y>
+     <width>421</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: black; /* Siyah yazı rengi */
+    background-color: rgba(0, 0, 0, 0); 
+}
+</string>
+   </property>
+   <property name="text">
+    <string>X uygulaması, vücuda yerleştirilen sensörler aracılığıyla fiziksel hareketlerinizi izler ve analiz eder. Bantlar ve sensörler vücudun belirli bölgelerine yerleştirildikten sonra kalibrasyon yapılır. Kalibrasyonun tamamlanmasıyla birlikte, egzersiz yaparken uygulama size görsel ve işitsel geri bildirim verir. Bu geri bildirimler sayesinde egzersizleri doğru yapmanız ve ilerlemenizi takip etmeniz sağlanır.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_5">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>350</y>
+     <width>421</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: black; /* Siyah yazı rengi */
+    background-color: rgba(0, 0, 0, 0); 
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Egzersizlerinizi tamamladıkça, uygulama her bir egzersizi otomatik olarak kaydeder ve performans verilerinizi toplar. Bu veriler, egzersiz ilerlemenizi görselleştirir ve grafikler halinde sunar. İlerleme raporlarına uygulama üzerinden istediğiniz zaman erişebilir, önceki egzersizlerle karşılaştırma yapabilirsiniz..</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_6">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>529</y>
+     <width>421</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: black; /* Siyah yazı rengi */
+    background-color: rgba(0, 0, 0, 0); 
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Eğer bir egzersiz sırasında teknik bir sorun yaşarsanız ya da hareketi doğru yapmadığınızı hissederseniz, uygulama size anlık geri bildirim verecektir. Geri bildirimlere göre hareketinizi düzeltebilir veya uygulamanın yardımıyla doğru formu öğrenebilirsiniz. Eğer sorun çözülmezse, uzmanınıza danışabilir ya da uygulama içi destek hattından yardım alabilirsiniz.
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_7">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>720</y>
+     <width>431</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: black; /* Siyah yazı rengi */
+    background-color: rgba(0, 0, 0, 0); 
+}
+</string>
+   </property>
+   <property name="text">
+    <string>X uygulaması, giyilebilir sensörler ve dizüstü bilgisayar ya da tablet gibi cihazlarla uyumlu çalışır. İlgili sensörler kullanıcının vücuduna yerleştirildikten sonra, uygulama dizüstü veya tablet üzerinden kontrol edilir.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
