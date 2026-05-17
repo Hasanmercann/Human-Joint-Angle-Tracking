@@ -1,83 +1,179 @@
-# Real-Time Human Joint Angle Tracking and Control
+﻿# Real-Time Human Joint Angle Tracking and Control
 
-Bu proje, insan eklem acilarini gercek zamanli olarak takip edip referans egzersiz hareketleriyle karsilastiran bir PyQt5 masaustu uygulamasidir.
+Bu proje, insan eklem açılarını gerçek zamanlı olarak takip eden ve referans egzersiz hareketleri ile karşılaştıran bir PyQt5 masaüstü uygulamasıdır.
 
-## Proje Ozeti
-- Kamera akisi uzerinden vucut pozunu algilar (MediaPipe Pose).
-- Omuz, dirsek, kalca, diz ve ayak bilegi gibi eklem acilarini hesaplar.
-- Referans hareket gorselleri ile canli hareketi tolerans degeri icinde karsilastirir.
-- Kullaniciya egzersiz, profil, yardim ve ilerleme raporu ekranlari sunar.
+## Proje Özeti
+- Kamera akışı üzerinden insan pozu algılanır (MediaPipe Pose).
+- Omuz, dirsek, kalça, diz ve ayak bileği dahil çoklu eklem açıları hesaplanır.
+- Referans hareket görselleri ile canlı hareket, tolerans aralığında karşılaştırılır.
+- Kullanıcıya egzersiz, profil, yardım ve ilerleme raporu ekranları sunulur.
 
-## Kullanilan Teknolojiler
+## Kullanılan Teknolojiler
 - Python 3
 - PyQt5
 - OpenCV
 - MediaPipe
 - NumPy
 
-## Proje Akisi
-1. Giris ekrani acilir.
-2. Ana menuden profil, kalibrasyon (hareket et), egzersiz programi, yardim ve ilerleme raporu ekranlarina gecilir.
-3. Egzersiz ekraninda `hareketler/` klasorundeki referans gorseller sira ile islenir.
-4. Kamera akisi ile acisal dogruluk kontrolu yapilir.
+## Uygulama Akışı
+1. Giriş ekranı açılır.
+2. Ana menüden ilgili modül seçilir.
+3. Egzersiz ekranında referans pozlar sırayla gösterilir.
+4. Kamera akışı üzerinden açı karşılaştırması yapılır.
+5. Sonuçlar ilerleme raporuna yansıtılır.
 
-## Ekran Goruntuleri
+## Gelişim Adımları
 
-### Giris
-![Giris ekrani](Görüntüler/giris/1.8%20log%20in%20ekranı.PNG)
+### Adım 1: Proje sürümünün belirlenmesi
+- Workspace içindeki kopyalar arasından aktif ve en güncel sürüm seçildi.
+- Çalışma dizini: New folder/StajProjesiiii
 
-### Ana Menu
-![Ana menu](Görüntüler/start_menu/1.1%20start%20menu.PNG)
+### Adım 2: Windows uyumluluğu düzeltmeleri
+- `subprocess.Popen(["python3", ...])` kullanımları `subprocess.Popen([sys.executable, ...])` olarak güncellendi.
+- Böylece Windows ortamında komut çağrıları güvenli hale getirildi.
 
-### Egzersiz
-![Egzersiz ekrani](Görüntüler/egzersiz/1.4%20egzersiz%20programı.PNG)
+### Adım 3: Görsel klasör yapısının düzenlenmesi
+- Arka plan görselleri `resimler/` altında alt klasörlere ayrıldı.
+- Kod içindeki görsel yolları yeni klasör yapısına göre güncellendi.
 
-### Yardim
-![Yardim ekrani](Görüntüler/yardim/1.7%20yardım.PNG)
+### Adım 4: Dokümantasyon görsellerinin ayrıştırılması
+- Ekran görüntüleri `Görüntüler/` altında konu bazlı klasörlere taşındı.
+- README görsel referansları bu yeni yapıya göre güncellendi.
 
-### Ilerleme Raporu
-![Ilerleme raporu](Görüntüler/ilerleme_raporu/1.6%20ilerleme%20raporu.PNG)
+### Adım 5: README genişletme
+- Kurulum, çalıştırma, teknik detaylar ve sorun giderme alanları genişletildi.
+- Bu sürümde kullanıcıya ait daha fazla görüntü, küçük görseller halinde eklendi.
 
 ## Kurulum
-Asagidaki paketleri yukleyin:
 
+### 1) Python kurulumu
+```bash
+python --version
+```
+Python 3.7 veya üzeri önerilir.
+
+### 2) Depoyu çekme
+```bash
+git clone https://github.com/Hasanmercann/Human-Joint-Angle-Tracking.git
+cd Human-Joint-Angle-Tracking
+```
+
+### 3) Bağımlılıkları kurma
 ```bash
 pip install pyqt5 opencv-python mediapipe numpy
 ```
 
-## Calistirma
-Proje klasorunde terminal acip su komutu calistirin:
-
+### 4) Kurulumu doğrulama
 ```bash
-python start_menu.py
+python -c "import cv2, mediapipe, PyQt5, numpy; print('Kurulum tamam')"
 ```
 
-Alternatif olarak giris ekraniyla baslamak icin:
+## Çalıştırma
 
+### Giriş ekranı ile başlatma
 ```bash
 python p_login.py
 ```
 
-## Giris Bilgisi (Demo)
-- Kullanici adi: `hasan`
-- Sifre: `12345`
+### Ana menüden başlatma
+```bash
+python start_menu.py
+```
 
-## Klasor Yapisi (Ozet)
+### Doğrudan takip ekranı
+```bash
+python main.py
+```
+
+## Demo Giriş Bilgisi
+- Kullanıcı adı: hasan
+- Şifre: 12345
+
+## Ekran Görüntüleri
+
+### Temel Uygulama Ekranları
+<p>
+  <img src="Görüntüler/giris/1.8%20log%20in%20ekranı.PNG" width="240" alt="Giriş ekranı" />
+  <img src="Görüntüler/start_menu/1.1%20start%20menu.PNG" width="240" alt="Ana menü" />
+  <img src="Görüntüler/yardim/1.7%20yardım.PNG" width="240" alt="Yardım" />
+  <img src="Görüntüler/ilerleme_raporu/1.6%20ilerleme%20raporu.PNG" width="240" alt="Ilerleme raporu" />
+</p>
+
+### Egzersiz Görselleri (Kullanıcı Talebine Göre)
+<p>
+  <img src="Görüntüler/egzersiz/1.3%20hareket%20et.PNG" width="220" alt="Egzersiz 1.3 hareket et" />
+  <img src="Görüntüler/egzersiz/1.4%20egzersiz%20programı.PNG" width="220" alt="Egzersiz ekranı 1.4" />
+  <img src="Görüntüler/egzersiz/1.5%20egzersiz%20programı.PNG" width="220" alt="Egzersiz ekranı 1.5" />
+</p>
+
+### Video Kareleri (Isaretlemeli Gorseller)
+<p>
+  <img src="Görüntüler/video_kareleri/vlcsnap-2025-01-20-20h27m50s040.png" width="220" alt="Video karesi 20h27m50s040" />
+  <img src="Görüntüler/video_kareleri/vlcsnap-2025-01-20-20h27m58s456.png" width="220" alt="Video karesi 20h27m58s456" />
+  <img src="Görüntüler/video_kareleri/vlcsnap-2025-01-20-20h28m17s324.png" width="220" alt="Video karesi 20h28m17s324" />
+  <img src="Görüntüler/video_kareleri/vlcsnap-2025-01-20-20h28m39s019.png" width="220" alt="Video karesi 20h28m39s019" />
+  <img src="Görüntüler/video_kareleri/vlcsnap-2025-01-21-23h01m50s864.png" width="220" alt="Video karesi 23h01m50s864" />
+  <img src="Görüntüler/video_kareleri/vlcsnap-2025-01-21-23h02m00s140.png" width="220" alt="Video karesi 23h02m00s140" />
+</p>
+
+### Python Klasörü (Tamamı)
+<p>
+  <img src="Görüntüler/python/PPpython%20tanıma1.PNG" width="220" alt="Python tanıma 1" />
+  <img src="Görüntüler/python/PPython%204.PNG" width="220" alt="Python 4" />
+  <img src="Görüntüler/python/PPython5.PNG" width="220" alt="Python 5" />
+</p>
+
+### Kurulum Klasörü (Tamamı)
+<p>
+  <img src="Görüntüler/kurulum/kinectk%20kurulum2.PNG" width="220" alt="Kurulum 2" />
+  <img src="Görüntüler/kurulum/studio%205.PNG" width="220" alt="Studio 5" />
+  <img src="Görüntüler/kurulum/studio1.PNG" width="220" alt="Studio 1" />
+</p>
+
+### Diğer Klasörü (Tamamı)
+<p>
+  <img src="Görüntüler/diger/1111.PNG" width="180" alt="Diger 1111" />
+  <img src="Görüntüler/diger/22222222.PNG" width="180" alt="Diger 22222222" />
+  <img src="Görüntüler/diger/görsel%204.PNG" width="180" alt="Diger görsel 4" />
+  <img src="Görüntüler/diger/görüntü1.PNG" width="180" alt="Diger görüntü 1" />
+  <img src="Görüntüler/diger/görüntü3.1.PNG" width="180" alt="Diger görüntü 3.1" />
+  <img src="Görüntüler/diger/görüntü3.PNG" width="180" alt="Diger görüntü 3" />
+</p>
+
+## Teknik Detaylar
+- Referans hareket klasörü: `hareketler/`
+- Açı toleransı: 40 derece
+- Pose confidence: 0.7
+- Isletim sistemi testi: Windows
+
+## Sorun Giderme
+
+### pyqt5 modülü bulunamadı
+```bash
+pip install --upgrade pyqt5
+```
+
+### Kamera açılmıyor
+- Kamera izinlerini kontrol et.
+- Başka uygulamaların kamerayı kullanmadığından emin ol.
+
+### Görseller görünmüyor
+- `Görüntüler/` ve `resimler/` klasör yapısının bozulmadığını doğrula.
+
+## Klasör Yapısı
 ```text
-StajProjesiiii/
+Human-Joint-Angle-Tracking/
   start_menu.py
-  main.py
   p_login.py
+  main.py
+  p_exercise_program.py
   p_profile.py
   p_help.py
   p_ilerlemeraporu.py
-  p_exercise_program.py
-  hareketler/            # Referans egzersiz gorselleri
-  resimler/              # Uygulama arka plan ve tema gorselleri
-  Görüntüler/            # Dokumantasyon ekran goruntuleri
+  hareketler/
+  resimler/
+  Görüntüler/
 ```
 
-## Notlar
-- Kamera erisimi aktif olmalidir.
-- Uygulama icinde Python sureci gecisleri `sys.executable` ile calisacak sekilde duzenlenmistir.
-- Isletim sistemi olarak Windows ortaminda test edilmistir.
+## Not
+- Bu README sürümü, özellikle kullanıcı içeren ve işaretlemeli ekran görüntülerini daha yoğun gösterecek şekilde hazırlanmıştır.
